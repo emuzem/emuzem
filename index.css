@@ -1,0 +1,283 @@
+body {
+    display: grid;
+    grid-template-areas: "header""section""footer";
+    grid-template-rows: 72px 1fr 850px;
+}
+
+
+.head {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.header {
+    grid-area: header;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+    padding: 0 80px 0 80px;
+}
+
+.section {
+    grid-area: section;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #262626;
+    margin-top: 80px;
+    padding: 0 80px 0 80px;
+    position: relative;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+header button {
+    background-color: white;
+    border: solid 1px #E0E0E0;
+    padding: 10px 20px 10px 20px;
+    border-radius: 3px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 24px;
+transition: all 0.3s;
+}
+
+header button:hover {
+    background-color: #E0E0E0;
+    border-radius: 50px;
+    color: white;
+}
+
+header button:active {
+    border: none;
+    outline: none;
+}
+
+header button:focus{
+    outline: none;
+}
+
+section {
+    padding: 40px 80px 0 80px;
+}
+
+.search input {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #626262;
+    color: 626262;
+}
+
+.s2 {
+    padding-top: 50px;
+}
+
+.h {
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 34px;
+}
+
+.h a {
+    color: black;
+    transition: all 0.3s;
+}
+
+.h a:hover {
+    color: #49A144;
+}
+
+.flex div {
+    height: 366px;
+    width: 308px;
+    margin: 10px;
+    
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.f {
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+}
+
+.s {
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+color: #757575
+}
+
+.t {
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 21px;
+}
+
+.flex a {
+    color: black;
+    transition: all 0.9s;
+}
+.flex a:hover {
+    background-color: #D8D8D8;
+    color: black;
+};
+
+figcaption p {
+    margin: 15px 0 10px 0;
+}
+
+.logofoot {
+    padding: 0 80px 0 80px;
+    border-bottom: solid 1px gray;
+    height: 117px;
+}
+
+.logofoot img {
+    margin-top: 45px;
+}
+
+.links {
+    height: 220px;
+    border-bottom: solid 1px gray;
+    padding: 0 80px 0 80px;
+    color: white;
+}
+
+.store {
+    height: 120px;
+    border-bottom: solid 1px gray;
+    padding: 0 80px 0 80px;
+    display: flex;
+    margin-top: 32px;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+}
+
+.store img {
+    margin: 30px;
+}
+
+.icon {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+}
+select {
+    width: 227px;
+    height: 40px;
+    padding-left: 30px;
+    background-color: #3B3B3B;
+    color: white;
+}
+.language {
+    position: relative;
+    margin-top: 32px;
+    
+}
+
+.green {
+    color: #49A144;
+}
+
+.social {
+    margin-top: 33px;
+    width: 92px;
+    height: 60px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.links2 {
+    margin-top: 32px;
+}
+
+.links a {
+    color: white;
+    transition: all 0.3s;
+}
+
+.links a:hover {
+    color: #3B3B3B;
+}
+
+.last a {
+    color: white;
+    transition: all 0.3s;
+}
+.last a:hover {
+    color: #3B3B3B;
+}
+
+.last {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#but {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    width: 80px;
+    height: 80px;
+    background-color: #59BD5A;
+    color: white;
+    font-size: 32px;
+}
+
+@media (max-width: 576px) {
+    .links {
+        height: 400px;
+        flex-direction: column;
+    }
+    section {
+        padding: 40px 5px 0 5px;
+    }
+    .links {
+        padding: 0 5px 0 5px;
+    }
+}
+@media (max-width: 992px) {
+.header {
+    padding: 0 5px 0 5px;
+}
+.footer {
+    padding: 0 5px 0 5px;
+}
+section {
+    padding: 40px 5px 0 5px;
+}
+.links {
+    padding: 0 5px 0 5px;
+}
+.logofoot {
+    padding: 0 5px 0 5px;
+}
+}
